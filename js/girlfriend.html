@@ -2,35 +2,25 @@
 <head>
 	<meta charset="utf-8">
 	<title>The JavaScript image Art</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
 </head>
-<body style="text-align: center;">
-	<h1 style="font-style: oblique">Girl Friend </h1>
-	<div class="images">
+<body>
+	<h1 >Girl Friend </h1>
+	<div id="images">
 		<li>
-			<a href="images/0832.jpg" title="Girl 0832" onclick="showPic(this); return false;">Girl 0832</a>
+			<a href="images/0832.jpg" title="Girl 0832" >Girl 0832</a>
 		</li>
 		<li>
-			<a href="images/4951.jpg" title="Girl 0832" onclick="showPic(this); return false;">Girl 4951</a>
+			<a href="images/4951.jpg" title="Girl 4951" >Girl 4951</a>
 		</li>
 		<li>
-			<a href="images/7511.jpg" title="Girl 0832" onclick="showPic(this); return false;">Girl 7511</a>
+			<a href="images/7511.jpg" title="Girl 7511" >Girl 7511</a>
 		</li>
 	</div>
-	<div class="show">
+	<div id="show">
 		<img id="pic" src="images/pic.png" alt="My Girl Friend" />
 		<h3 id="description" >Choose a girl who make your heart peng peng peng !</h3> 
 	</div>
-	<script type="text/javascript">
-		function showPic(whichPic){
-			var source = whichPic.getAttribute('href');
-			var pic = document.getElementById('pic');
-			pic.setAttribute('src',source);
-			var title = whichPic.getAttribute('title');
-			var description = document.getElementById('description');
-			description.firstChild.nodeValue = title;
 
-		}
-	</script>
-
-	
+	<script type="text/javascript" src="index.js"></script>
 </body>
